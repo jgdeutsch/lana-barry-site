@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lana Barry | Marketing Coordinator - Sydney</title>
-  <meta name="description" content="Lana Barry - Marketing Coordinator based in Sydney. Experienced in beauty, lifestyle, and brand marketing. Available for opportunities." />
+  <meta name="description" content="Lana Barry - Marketing Coordinator in Sydney. I help beauty, wellness, and lifestyle brands grow through research-driven content, honest storytelling, and campaigns that sell." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -69,21 +69,27 @@
       height: 220px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
       border: 4px solid var(--white);
       box-shadow: 0 8px 30px rgba(0,0,0,0.08);
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.2;
+      margin-bottom: 16px;
+      line-height: 1.25;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .hero .tagline {
-      font-size: 1.125rem;
+      font-size: 1.05rem;
       color: var(--text-light);
       margin-bottom: 24px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .hero .location {
       display: inline-flex;
@@ -130,6 +136,33 @@
       margin-bottom: 16px;
     }
 
+    /* RESULTS */
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .result-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .result-card .number {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 4px;
+    }
+    .result-card .label {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+
     /* SKILLS */
     .skills-grid {
       display: grid;
@@ -152,6 +185,43 @@
       font-size: 0.85rem;
       color: var(--text-light);
       margin-bottom: 0;
+    }
+
+    /* PHILOSOPHY */
+    .philosophy {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      margin: 8px 0 0;
+    }
+    .philosophy h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 16px;
+    }
+    .philosophy p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+    .philosophy p:last-child { margin-bottom: 0; }
+    .philosophy blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+      margin: 20px 0;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .philosophy .cite {
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      display: block;
+      margin-top: 6px;
     }
 
     /* AVAILABLE BANNER */
@@ -201,6 +271,23 @@
       background: #96604C;
       transform: translateY(-1px);
     }
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--accent-dark);
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      border: 1px solid var(--accent-dark);
+      transition: background 0.2s, color 0.2s;
+      margin-left: 12px;
+    }
+    .btn-outline:hover {
+      background: var(--accent-dark);
+      color: var(--white);
+    }
 
     /* FOOTER */
     footer {
@@ -225,11 +312,14 @@
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
-      .hero h1 { font-size: 1.85rem; }
+      .hero h1 { font-size: 1.75rem; }
+      .results-grid { grid-template-columns: 1fr; }
       .skills-grid { grid-template-columns: 1fr; }
       .hero { padding: 40px 0 30px; }
       section { padding: 36px 0; }
       .available-banner { padding: 28px 20px; }
+      .philosophy { padding: 28px 20px; }
+      .btn-outline { margin-left: 0; margin-top: 12px; }
     }
   </style>
 </head>
@@ -247,50 +337,93 @@
 
     <section class="hero">
       <img src="/lanabarry.jpeg" alt="Lana Barry" class="hero-photo" />
-      <h1>Lana Barry</h1>
-      <p class="tagline">Marketing Coordinator</p>
+      <h1>I help beauty and wellness brands get more customers.</h1>
+      <p class="tagline">Marketing Coordinator in Sydney. Previously grew a 52-studio tanning brand's audience to 23,700 followers and built their ambassador programme from scratch.</p>
       <div class="location">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
         Recently relocated to Sydney from Brighton, UK
       </div>
     </section>
 
-    <section id="about">
-      <span class="section-label">About Me</span>
-      <h2>Marketing professional with a passion for beauty and lifestyle brands</h2>
-      <p>I've recently made the move from Brighton, UK to Sydney, Australia and I'm looking for my next opportunity as a Marketing Coordinator, ideally within the beauty, wellness, or lifestyle space.</p>
-      <p>With a background in coordinating marketing campaigns, managing social media channels, and supporting brand launches, I bring a hands-on, creative approach to everything I do. I thrive in fast-paced environments and love the energy of building brands that people genuinely connect with.</p>
+    <section id="proof">
+      <span class="section-label">The Facts</span>
+      <h2>What I did at Consol Tanning</h2>
+      <p>Between May 2022 and February 2024, I was the sole Marketing Coordinator for Consol Tanning Limited, the UK's largest tanning studio chain. I was responsible for every piece of marketing the company put out. Here is what I delivered:</p>
+
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="number">52</div>
+          <div class="label">Studios marketed across the UK</div>
+        </div>
+        <div class="result-card">
+          <div class="number">23.7K</div>
+          <div class="label">Instagram followers managed</div>
+        </div>
+        <div class="result-card">
+          <div class="number">2,100+</div>
+          <div class="label">Social media posts created</div>
+        </div>
+      </div>
+
+      <p>I built the brand ambassador programme from nothing &mdash; identifying influencers, negotiating partnerships, coordinating photoshoots, and managing ongoing relationships. I wrote every email campaign, every SMS blast, every piece of website copy. I maintained the app content, ran the SEO, and managed the company helpline.</p>
+      <p>I also served as direct support to the Managing Director &mdash; drafting speeches, handling internal communications, and managing confidential matters. When a client complained, I was the voice they heard from Head Office.</p>
+      <p><a href="/portfolio.html" class="btn-outline" style="margin-left:0; margin-top:8px;">See the work &rarr;</a></p>
     </section>
 
     <section id="skills">
-      <span class="section-label">What I Do</span>
-      <h2>Skills &amp; Experience</h2>
+      <span class="section-label">What I Bring</span>
+      <h2>Practical skills, not buzzwords</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>Social Media Management</h3>
-          <p>Content planning, scheduling, community management, and analytics across Instagram, TikTok, and Facebook.</p>
+          <h3>Social Media</h3>
+          <p>Content creation, scheduling, community management, and reporting across Instagram, TikTok, and Facebook. I use Meta Business Suite daily.</p>
         </div>
         <div class="skill-card">
-          <h3>Campaign Coordination</h3>
-          <p>End-to-end coordination of marketing campaigns, from briefing through to reporting on results.</p>
+          <h3>Email &amp; SMS</h3>
+          <p>Campaign planning and execution in Mailchimp and TextLocal. Segmentation, A/B testing, and writing copy that drives opens and clicks.</p>
         </div>
         <div class="skill-card">
-          <h3>Content Creation</h3>
-          <p>Copywriting, visual content, email newsletters, and brand storytelling that resonates with audiences.</p>
+          <h3>Content &amp; Copy</h3>
+          <p>Graphic design in Canva and Photoshop. Copywriting for web, social, email, and print. I write to sell, not to fill space.</p>
         </div>
         <div class="skill-card">
           <h3>Brand &amp; Influencer</h3>
-          <p>Influencer outreach, gifting programs, brand partnerships, and event coordination.</p>
+          <p>Ambassador recruitment and management, influencer outreach, gifting programmes, photoshoot coordination, and partnership negotiation.</p>
         </div>
+      </div>
+    </section>
+
+    <section id="philosophy">
+      <span class="section-label">My Approach</span>
+      <div class="philosophy">
+        <h2>How I think about marketing for beauty, wellness, and health brands</h2>
+
+        <p>My approach to marketing was shaped by studying the greats &mdash; David Ogilvy above all, but also the thinking of Seth Godin, Rory Sutherland, and the founders who built brands like Aesop, Glossier, and The Ordinary by respecting their customers' intelligence.</p>
+
+        <blockquote>
+          "The consumer is not a moron. She's your wife. Don't insult her intelligence, and don't shock her."
+          <span class="cite">&mdash; David Ogilvy, <em>Confessions of an Advertising Man</em></span>
+        </blockquote>
+
+        <p>That line changed how I think about everything I write. Beauty and wellness customers are well-informed. They read ingredients lists. They compare reviews. They can spot empty promises instantly. The brands that win their loyalty are the ones that tell the truth clearly and make the buying decision easy.</p>
+
+        <p>Ogilvy taught that advertising must sell &mdash; not merely entertain &mdash; and that the best way to sell is to give the customer useful information. I apply this every day. When I write a social post, I ask: does this help the reader? When I plan an email campaign, I ask: what specific benefit am I offering? When I brief an influencer, I ask: will this feel honest?</p>
+
+        <p>I also believe in research before opinion. Ogilvy spent three weeks researching Rolls-Royce before he wrote a single headline. I am not comparing myself to Ogilvy &mdash; but I do believe in doing the homework. I study the audience, the competitors, and the data before I start creating. A campaign built on real insight will always outperform one built on guesswork.</p>
+
+        <p>For beauty and wellness brands specifically, this means: lead with genuine benefits, not hype. Show real results. Let the product speak. Build trust through consistency, not through noise. The brands I admire most &mdash; and the ones I want to help build &mdash; are the ones that earn attention rather than demand it.</p>
       </div>
     </section>
 
     <section id="contact">
       <div class="available-banner">
         <p><span class="available-dot"></span><strong>Available for opportunities</strong></p>
-        <h2>Let's work together</h2>
-        <p>I'm actively looking for Marketing Coordinator roles in Sydney, particularly in beauty, wellness, and lifestyle. I'd love to hear from you.</p>
-        <a href="mailto:lanabarry@live.co.uk" class="btn">Get in Touch</a>
+        <h2>If you need a marketer who does the work, let's talk.</h2>
+        <p>I'm looking for a Marketing Coordinator role in Sydney, ideally with a beauty, wellness, or lifestyle brand. I bring a degree in Business Management with Marketing, nearly two years of hands-on experience running all marketing for a 52-location brand, and a genuine love for this industry.</p>
+        <div>
+          <a href="mailto:lanabarry@live.co.uk" class="btn">Get in Touch</a>
+          <a href="/cv.html" class="btn-outline">View My CV</a>
+        </div>
       </div>
     </section>
 
