@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Lana Barry</title>
+  <meta name="description" content="Lana Barry's marketing portfolio - social media, email campaigns, ambassador programmes, and brand content created for Consol Tanning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #FAF7F4; --text: #2C2C2C; --text-light: #6B6562;
+      --accent: #C4917B; --accent-dark: #A87462; --white: #FFFFFF; --border: #E8E0DA;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    nav { padding: 24px 0; display: flex; justify-content: space-between; align-items: center; }
+    nav .name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 600; color: var(--text); text-decoration: none; }
+    nav .nav-links { display: flex; gap: 28px; }
+    nav .nav-links a { font-size: 0.875rem; color: var(--text-light); text-decoration: none; letter-spacing: 0.02em; transition: color 0.2s; }
+    nav .nav-links a:hover { color: var(--accent-dark); }
+    nav .nav-links a.active { color: var(--accent-dark); font-weight: 600; }
+
+    .page-header { padding: 50px 0 20px; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 600; margin-bottom: 8px; }
+    .page-header p { color: var(--text-light); font-size: 1rem; max-width: 600px; }
+
+    .portfolio-intro {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin: 24px 0 40px;
+    }
+    .portfolio-intro h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .portfolio-intro p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 8px; }
+    .portfolio-intro .company-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--accent-dark); text-decoration: none; font-weight: 500; font-size: 0.9rem;
+    }
+    .portfolio-intro .company-link:hover { text-decoration: underline; }
+
+    .section-label {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--accent-dark); font-weight: 600; margin-bottom: 20px; padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .project { margin-bottom: 48px; }
+    .project h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem; font-weight: 600; margin-bottom: 8px;
+    }
+    .project p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 16px; }
+    .project .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .project .tag {
+      background: var(--white); border: 1px solid var(--border); border-radius: 16px;
+      padding: 4px 12px; font-size: 0.78rem; color: var(--text-light);
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .screenshot-grid.two-col {
+      grid-template-columns: 1fr 1fr;
+    }
+    .screenshot-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .screenshot-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .screenshot-card .caption {
+      padding: 12px 16px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    .live-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--accent-dark); text-decoration: none; font-weight: 500; font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    .live-link:hover { text-decoration: underline; }
+    .live-link svg { width: 14px; height: 14px; fill: currentColor; }
+
+    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.85rem; color: var(--text-light); margin-top: 40px; }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .screenshot-grid.two-col { grid-template-columns: 1fr; }
+      .portfolio-intro { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/" class="name">Lana Barry</a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/cv.html">CV</a>
+        <a href="/portfolio.html" class="active">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <h1>Portfolio</h1>
+      <p>A selection of marketing work from my time as Marketing Coordinator at Consol Tanning, where I created and managed all digital marketing assets across 52 UK studios.</p>
+    </div>
+
+    <div class="portfolio-intro">
+      <h2>Consol Tanning Limited</h2>
+      <p>Marketing Coordinator &mdash; May 2022 to February 2024</p>
+      <p>Consol is the UK's largest tanning studio chain with 50+ locations. I was responsible for all digital marketing output, including social media content, email &amp; SMS campaigns, website copy, the ambassador programme, and the brand's app marketing.</p>
+      <a href="https://www.consol.eu/" target="_blank" class="company-link">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7H12z"/></svg>
+        Visit consol.eu
+      </a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="section-label">Social Media Content</div>
+    <div class="project">
+      <h3>Instagram &amp; Social Media Management</h3>
+      <p>Created and scheduled engaging content across Instagram, Facebook, and TikTok for the @consoluk account (23.7K followers). Content included promotional graphics, lifestyle photography, seasonal campaigns, and community engagement posts.</p>
+      <div class="tags">
+        <span class="tag">Instagram</span>
+        <span class="tag">Facebook</span>
+        <span class="tag">TikTok</span>
+        <span class="tag">Content Creation</span>
+        <span class="tag">Canva</span>
+        <span class="tag">Meta Business Suite</span>
+      </div>
+      <div class="screenshot-grid">
+        <div class="screenshot-card">
+          <img src="/portfolio/consol-instagram.png" alt="Consol Tanning Instagram profile showing content created by Lana Barry" />
+          <div class="caption">The @consoluk Instagram account with 23.7K followers &mdash; I created and managed all social content during my tenure.</div>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/consoluk/" target="_blank" class="live-link">
+        <svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7H12z"/></svg>
+        View @consoluk on Instagram
+      </a>
+    </div>
+
+    <!-- Ambassador Programme -->
+    <div class="section-label">Ambassador Programme</div>
+    <div class="project">
+      <h3>Brand Ambassador Programme</h3>
+      <p>Recruited, trained, and managed Consol's brand ambassador programme from the ground up. This involved identifying and onboarding influencers and content creators, coordinating photoshoots, managing ongoing relationships, and measuring campaign impact across the brand's social channels.</p>
+      <div class="tags">
+        <span class="tag">Influencer Marketing</span>
+        <span class="tag">Ambassador Management</span>
+        <span class="tag">Recruitment</span>
+        <span class="tag">Relationship Management</span>
+      </div>
+      <div class="screenshot-grid">
+        <div class="screenshot-card">
+          <img src="/portfolio/consol-ambassador.png" alt="Consol Tanning Ambassador Programme page" />
+          <div class="caption">The ambassador programme page on consol.eu &mdash; I built and managed this programme, recruiting creators who aligned with the brand.</div>
+        </div>
+      </div>
+      <a href="https://www.consol.eu/ambassador-programme" target="_blank" class="live-link">
+        <svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7H12z"/></svg>
+        View Ambassador Programme
+      </a>
+    </div>
+
+    <!-- Website & App -->
+    <div class="section-label">Website &amp; App Content</div>
+    <div class="project">
+      <h3>Website Content &amp; SEO</h3>
+      <p>Maintained and updated all content across consol.eu, ensuring pages were SEO-optimised with fresh, on-brand copy. This included the homepage promotions, "Get Started" onboarding flow, app download pages, and location-specific content for 52 studios.</p>
+      <div class="tags">
+        <span class="tag">Umbraco CMS</span>
+        <span class="tag">SEO</span>
+        <span class="tag">Copywriting</span>
+        <span class="tag">Web Content</span>
+      </div>
+      <div class="screenshot-grid two-col">
+        <div class="screenshot-card">
+          <img src="/portfolio/consol-homepage.png" alt="Consol Tanning homepage" />
+          <div class="caption">Homepage &mdash; promotional banners and brand messaging</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="/portfolio/consol-new.png" alt="Consol sign up page" />
+          <div class="caption">Sign Up Today &mdash; new customer onboarding flow</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="/portfolio/consol-app.png" alt="Consol app download page" />
+          <div class="caption">App page &mdash; driving mobile downloads and engagement</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="/portfolio/consol-loyalty.png" alt="Consol loyalty programme page" />
+          <div class="caption">Loyalty Programme &mdash; tiered membership system</div>
+        </div>
+      </div>
+      <a href="https://www.consol.eu/" target="_blank" class="live-link">
+        <svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7H12z"/></svg>
+        Visit consol.eu
+      </a>
+    </div>
+
+    <!-- Email & SMS -->
+    <div class="section-label">Email &amp; SMS Campaigns</div>
+    <div class="project">
+      <h3>Email &amp; SMS Marketing</h3>
+      <p>Planned and executed targeted email and SMS marketing campaigns using Mailchimp and TextLocal, achieving high engagement and conversion rates. Campaigns included seasonal promotions, new studio launches, loyalty programme updates, and re-engagement flows for lapsed customers across all 52 locations.</p>
+      <div class="tags">
+        <span class="tag">Mailchimp</span>
+        <span class="tag">TextLocal</span>
+        <span class="tag">Email Marketing</span>
+        <span class="tag">SMS Marketing</span>
+        <span class="tag">Campaign Strategy</span>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Lana Barry</p>
+    </footer>
+  </div>
+</body>
+</html>

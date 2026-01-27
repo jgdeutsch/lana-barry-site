@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Lana Barry</title>
+  <meta name="description" content="Lana Barry's CV - Marketing Coordinator with experience in digital marketing, brand management, and customer acquisition." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #FAF7F4; --text: #2C2C2C; --text-light: #6B6562;
+      --accent: #C4917B; --accent-dark: #A87462; --white: #FFFFFF; --border: #E8E0DA;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    nav { padding: 24px 0; display: flex; justify-content: space-between; align-items: center; }
+    nav .name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 600; color: var(--text); text-decoration: none; }
+    nav .nav-links { display: flex; gap: 28px; }
+    nav .nav-links a { font-size: 0.875rem; color: var(--text-light); text-decoration: none; letter-spacing: 0.02em; transition: color 0.2s; }
+    nav .nav-links a:hover { color: var(--accent-dark); }
+    nav .nav-links a.active { color: var(--accent-dark); font-weight: 600; }
+
+    .page-header { padding: 50px 0 30px; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 600; margin-bottom: 8px; }
+    .page-header p { color: var(--text-light); font-size: 1rem; }
+
+    .cv-section { padding: 28px 0; border-top: 1px solid var(--border); }
+    .section-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-dark); font-weight: 600; margin-bottom: 20px; }
+
+    .job { margin-bottom: 28px; }
+    .job:last-child { margin-bottom: 0; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+    .job-title { font-weight: 600; font-size: 1.05rem; }
+    .job-date { font-size: 0.85rem; color: var(--text-light); white-space: nowrap; }
+    .job-company { font-size: 0.95rem; color: var(--accent-dark); margin-bottom: 8px; }
+    .job ul { padding-left: 20px; color: var(--text-light); font-size: 0.9rem; }
+    .job ul li { margin-bottom: 4px; }
+
+    .edu-item { margin-bottom: 20px; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 2px; }
+    .edu-item .edu-school { font-size: 0.9rem; color: var(--accent-dark); }
+    .edu-item .edu-date { font-size: 0.85rem; color: var(--text-light); }
+    .edu-item .edu-grade { font-size: 0.85rem; color: var(--text-light); }
+
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-tag { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 6px 16px; font-size: 0.85rem; color: var(--text); }
+
+    .contact-bar { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 8px; }
+    .contact-bar a, .contact-bar span { font-size: 0.9rem; color: var(--text-light); text-decoration: none; }
+    .contact-bar a:hover { color: var(--accent-dark); }
+
+    .download-btn { display: inline-block; background: var(--accent-dark); color: var(--white); padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.9rem; margin-top: 20px; transition: background 0.2s; }
+    .download-btn:hover { background: #96604C; }
+
+    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.85rem; color: var(--text-light); }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .job-header { flex-direction: column; gap: 2px; }
+      .contact-bar { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/" class="name">Lana Barry</a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/cv.html" class="active">CV</a>
+        <a href="/portfolio.html">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <h1>Curriculum Vitae</h1>
+      <p>Marketing professional with hands-on experience in digital strategy, brand building, and customer acquisition.</p>
+      <div class="contact-bar">
+        <span>Sydney, Australia</span>
+        <a href="tel:0414343631">0414 343 631</a>
+        <a href="mailto:lanabarry@live.co.uk">lanabarry@live.co.uk</a>
+        <a href="https://www.linkedin.com/in/lana-barry-26750a195/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <section class="cv-section">
+      <div class="section-label">Work Experience</div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Community Sales Manager</span>
+          <span class="job-date">May 2025 &ndash; Present</span>
+        </div>
+        <div class="job-company">Regus (IWG) &mdash; Sydney, Australia</div>
+        <ul>
+          <li>Oversee daily operations and client relationships, maintaining a professional, welcoming environment while ensuring high levels of satisfaction and retention.</li>
+          <li>Manage onboarding and move-in processes for new clients, delivering a smooth transition and strong first impression.</li>
+          <li>Conduct tours and consultations with prospective members, showcasing services and driving sales conversions.</li>
+          <li>Lead and motivate a small team, fostering a customer-first culture and consistently meeting service standards.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Salon Manager</span>
+          <span class="job-date">Sep 2024 &ndash; Feb 2025</span>
+        </div>
+        <div class="job-company">Amore Barbershop</div>
+        <ul>
+          <li>Managed front of house operations, including handling payments and maintaining salon atmosphere and cleanliness.</li>
+          <li>Contributed to social media marketing efforts.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Administrative Assistant</span>
+          <span class="job-date">Jul 2024 &ndash; Sep 2024</span>
+        </div>
+        <div class="job-company">Hannover Re</div>
+        <ul>
+          <li>Demonstrated strong organisational skills and computer literacy, utilising Excel and Doxis winCube to manage treaty and claims information.</li>
+          <li>Applied Excel proficiency to handle projects, including data entry and analysis on sensitive re-insurance data.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Marketing Coordinator</span>
+          <span class="job-date">May 2022 &ndash; Feb 2024</span>
+        </div>
+        <div class="job-company">Consol Tanning Limited</div>
+        <ul>
+          <li>Developed and implemented digital marketing strategies, enhancing brand awareness and driving user acquisition for 52 studios.</li>
+          <li>Recruited, trained, and managed a brand ambassador programme, successfully boosting brand presence and advocacy.</li>
+          <li>Created and scheduled engaging content across social media platforms.</li>
+          <li>Planned and executed targeted email &amp; SMS marketing campaigns, achieving high engagement and conversion rates.</li>
+          <li>Maintained website &amp; app material, ensuring SEO-optimised and fresh content.</li>
+          <li>Provided direct support to the Managing Director &mdash; drafting speeches, internal communications, and email responses.</li>
+          <li>Managed the Helpline team and company inbox, acting as Head Office's voice for escalated client enquiries.</li>
+          <li>Assisted with event coordination, presentations, and general administrative support across marketing and executive teams.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Front of House / Waitress</span>
+          <span class="job-date">Mar 2015 &ndash; May 2022</span>
+        </div>
+        <div class="job-company">Rockwater, Coppa Club, Jolliffes Coffee Shop</div>
+        <ul>
+          <li>Delivered excellent customer service, ensuring guest satisfaction.</li>
+          <li>Supported daily operations, including opening/closing and F&amp;B preparation.</li>
+          <li>Collaborated effectively with colleagues and managers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">Education</div>
+
+      <div class="edu-item">
+        <h3>BA (Hons) Business Management with Marketing</h3>
+        <div class="edu-school">University of the West of England, Bristol</div>
+        <div class="edu-date">September 2018 &ndash; June 2021</div>
+        <div class="edu-grade">Upper 2:1</div>
+      </div>
+
+      <div class="edu-item">
+        <h3>A Levels</h3>
+        <div class="edu-school">Newman College, Brighton &amp; Hove</div>
+        <div class="edu-date">September 2016 &ndash; June 2018</div>
+        <div class="edu-grade">3 x C grade A Levels</div>
+      </div>
+
+      <div class="edu-item">
+        <h3>GCSEs</h3>
+        <div class="edu-school">Cardinal Newman School, Brighton &amp; Hove</div>
+        <div class="edu-date">September 2012 &ndash; June 2016</div>
+        <div class="edu-grade">10 x A&ndash;C GCSEs</div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">Skills</div>
+      <div class="skills-list">
+        <span class="skill-tag">Meta Business Suite</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">Adobe Photoshop</span>
+        <span class="skill-tag">Umbraco CMS</span>
+        <span class="skill-tag">Mailchimp</span>
+        <span class="skill-tag">TextLocal</span>
+        <span class="skill-tag">Content Creation</span>
+        <span class="skill-tag">Ambassador Management</span>
+        <span class="skill-tag">Social Media</span>
+        <span class="skill-tag">Team Management</span>
+        <span class="skill-tag">Customer Service</span>
+        <span class="skill-tag">Sales &amp; Marketing</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Lana Barry</p>
+    </footer>
+  </div>
+</body>
+</html>
